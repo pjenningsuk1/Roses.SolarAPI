@@ -39,11 +39,11 @@ namespace Roses.SolarAPI.Models.FoxCloud
                     Values = new Values108() { Mode = workMode };
                     break;
                 default:
-                    Values = new Values106() { Mode = workMode };
+                    Values = new Values109() { Mode = workMode };
                     break;
             }
 
-            // "h106__02__00"
+            // "h109__02__00"
             Key = $"{spaKey.Trim()}__02__00";
         }
 
@@ -73,9 +73,9 @@ namespace Roses.SolarAPI.Models.FoxCloud
         string? Mode { get; set; }
     }
 
-    public partial class Values106 : IValues
+    public partial class Values109 : IValues
     {
-        [JsonPropertyName("h106__02__00")]
+        [JsonPropertyName("h109__02__00")]
         public string? Mode { get; set; }
     }
 
@@ -96,10 +96,10 @@ namespace Roses.SolarAPI.Models.FoxCloud
 
     public class SpaKeys
     {
-        public const string H106 = "h106";
+        public const string H109 = "h109";
         public const string H108 = "h108";
 
-        public const string DEFAULT = H106;
-        public readonly static string[] ALL = new[] { H106, H108 };
+        public const string DEFAULT = H109;
+        public readonly static string[] ALL = new[] { H109, H108 };
     }
 }
